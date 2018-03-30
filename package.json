@@ -1,0 +1,40 @@
+{
+  "name": "shortenme",
+  "author": "Thuy Dung",
+  "description": "Simple shorten url",
+  "version": "v1.0.0",
+  "scripts": {
+    "start": "rm -rf build && tsc && cp config/* build/src/ && node build/src/Server.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "express-validator": "^5.0.3",
+    "firebase-admin": "^5.11.0",
+    "regex": "^0.1.1",
+    "typescript": "^2.8.1",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.2",
+    "frisby": "^2.0.14",
+    "jest": "^22.4.3",
+    "ts-jest": "^22.4.2",
+    "typescript": "^2.8.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
